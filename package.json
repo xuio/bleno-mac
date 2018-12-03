@@ -19,7 +19,8 @@
     "napi-thread-safe-callback": "0.0.6",
     "bleno": "^0.5.0",
     "node-addon-api": "^1.1.0",
-    "node-pre-gyp": "^0.10.0"
+    "node-pre-gyp": "^0.10.0",
+    "xpc-connection": "taoyuan/node-xpc-connection"
   },
   "scripts": {
     "install": "node-pre-gyp install --fallback-to-build",
@@ -36,5 +37,8 @@
     "module_path": "./native/",
     "host": "https://github.com/notjosh/bleno-mac/releases/download/",
     "remote_path": "{version}"
+  },
+  "resolutions": {
+    "xpc-connection": "taoyuan/node-xpc-connection"
   }
 }
